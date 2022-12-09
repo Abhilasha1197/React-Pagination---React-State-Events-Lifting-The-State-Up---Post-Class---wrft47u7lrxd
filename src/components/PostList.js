@@ -23,7 +23,7 @@ const PostList = () => {
         actPage={pageNumber}
         setActivePage={setPageNumber}
       />
-      {isLoading && <Loading />}
+      {isLoading && <Loader />}
       {!isLoading &&
         posts.map((post) => {
           return <Post title={post.title} body={post.body} key={post.title} />;

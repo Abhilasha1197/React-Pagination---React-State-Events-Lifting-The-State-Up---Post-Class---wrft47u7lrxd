@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Loading() {
+function Loader() {
   return (
     <div  className='loader' id='loader'>loading</div>
   )
 }
 
-export default Loading;
+export default Loader 
