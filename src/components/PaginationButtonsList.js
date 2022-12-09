@@ -6,7 +6,7 @@ const PaginationButtonsList = ({activePage,setAtivePage}) => {
         <div className="pagination-buttons-list">
            {buttons.map((pn) =>{
             return (
-                <buttons id = {`button-${pn}`} key={pn} className = {pn=== activePage? "active-button" : ""}
+                <buttons id = {`button-${pn}`} key={pn} className = {pn === activePage? "active-btn" : ""}
                 onClick = {() => {
                     setAtivePage(pn)
                 }}
