@@ -20,10 +20,10 @@ const PostList = () => {
   return (
     <>
       <PaginationButtonsList
-        activePage={pageNumber}
-        setAtivePage={setPageNumber}
+        actPage={pageNumber}
+        setActivePage={setPageNumber}
       />
-      {isLoading && <Loader />}
+      {isLoading && <Loading />}
       {!isLoading &&
         posts.map((post) => {
           return <Post title={post.title} body={post.body} key={post.title} />;
